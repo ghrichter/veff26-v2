@@ -92,6 +92,8 @@ body {
   font-family: Inter;
   color: #000000;
   font-size: 16px;
+  min-height: 100dvh;
+  margin: 0;
 }
 .wrapper {
   display: flex;
@@ -102,6 +104,8 @@ body {
 button {
   background: #996644;
   color: #ffeedd;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /** Haus **/
@@ -128,6 +132,18 @@ nav ul{
   padding: 20px 0;
   font-size: 1.5rem;
 }
+
+nav a {
+  text-decoration: none;
+}
+nav a:hover,
+nav a:active {
+  text-decoration: underline;
+}
+
+li.current {
+  text-decoration: underline;
+}
 /** Meginmál **/
 
 main {
@@ -140,21 +156,33 @@ footer{
   display: flex;
   justify-content: center;
   width: 100%;
-  accent-color: #996644;
+  background: #996644;
   border-top: 2px solid #000000;
+  margin-top: auto;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  justify-items: center;
+  padding: 20px;
+  text-align: center;
 }
 /** Flekar / cards á forsíðu **/
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
-
+section .cards {
+  padding: 20px;
+}
 .cards h2 {
   font-size: 2rem;
   font-weight: 700;
 }
 .cards img {
   height: 300px;
+  object-fit: cover;
 }
 /* TODO */
 
