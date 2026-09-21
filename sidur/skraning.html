@@ -1,0 +1,141 @@
+<!-- minimum html búið til með ! -->
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Skráðu þig í þína draumaferð." />
+    <meta property="og:title" content="Skráning í ferð" />
+    <meta
+      property="og:description"
+      content="Skráðu þig hér í ferðir Ferðaþjónustufyrirtækisins"
+    />
+    <meta property="og:image" content="https://veff26-v1.netlify.app/myndir/vegur.jpg" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Skráning í ferð</title>
+  </head>
+  <body>
+    <header>
+      <h1>Skráning í ferð</h1>
+
+      <p class="sr-only"><a href="#efni">Beint í efni</a>.</p>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="um.html">Um</a></li>
+          <li><a href="ferdir.html">Ferðir</a></li>
+          <li><a href="skraning.html">Skráning</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="efni">
+      <form>
+        <fieldset>
+          <legend>Ferð</legend>
+          <div>
+            <label for="event">Hvaða ferð viljið þið skrá ykkur í?</label>
+            <select id="event">
+              <option>Jöklaklifur</option>
+              <option>Róleg gönguferð á Suðurlandi</option>
+              <option>Gullnihringurinn</option>
+              <option>Silfurkassinn</option>
+              <option>Bronsþríhyrningurinn</option>
+              <option>Köfunarferð</option>
+              <option>Norðurljósaferð</option>
+              <option>Reykjavíkurrölt</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Hópur</legend>
+          <div>
+            <label for="size">Fjöldi</label>
+            <input
+              id="size"
+              type="number"
+              min="1"
+              placeholder="Hversu margir í hópnum?"
+              required
+            />
+          </div>
+          <div>
+            <label for="experience">Upplýsingar um hóp</label>
+            <input
+              id="experience"
+              type="text"
+              placeholder="Hver er reynsla hópsins?"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Netfang tengiliðar</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="your@email.org"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone">Símanúmer</label>
+            <input id="phone" type="tel" placeholder="123-4567" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Dagsetning og tími</legend>
+          <div>
+            <label for="whendate">Hvenær viljið þið koma?</label>
+            <input id="whendate" type="date" required />
+          </div>
+          <div>
+            <label for="whentime">Hvaða tíma?</label>
+            <select id="whentime" required>
+              <option value="" hidden selected disabled>Vinsamlegast veldu tíma</option>
+              <!---->
+              <option value="early">Fyrir hádegi</option>
+              <option value="afternoon">Eftir hádegi</option>
+              <option value="late">Kvöld</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Bóka</legend>
+          <div>
+            <label for="terms">
+              Ég samþykki skilmála<input id="terms" type="checkbox" required
+            /></label>
+          </div>
+          <button>Panta og greiða</button>
+        </fieldset>
+      </form>
+      <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+    </main>
+    <footer>
+      <h2>Opnunartímar</h2>
+      <h3>Skrifstofur</h3>
+      <dl>
+        <dt>Mánudaga til föstudaga:</dt>
+        <dd>12:00-18:00</dd>
+        <dt>Laugardagar:</dt>
+        <dd>14:00-16:00</dd>
+        <dt>Sunnudagar:</dt>
+        <dd>Lokað</dd>
+      </dl>
+      <h3>Samfélagsmiðlar</h3>
+      <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
+      <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
+      <a href="https://www.youtube.com/user/HIvarp">YouTube</a>
+      <h2>Hafðu samband</h2>
+      <address>
+        Ferðaþjónustufyrirtækið<br />
+        Ferðagata 1<br />
+        101 Reykjavík<br />
+        Sími 234-2345<br />
+        <a href="mailto:ferdathjonustufyrirtaeki@example.org"
+          >ferdathjonustufyrirtaeki@example.org</a
+        ><br />
+      </address>
+    </footer>
+  </body>
+</html>
