@@ -23,20 +23,19 @@
   <body>
     <header>
       <h1>Ferðaþjónustufyrirtækið</h1>
-
-      <p class="sr-only"><a href="#efni">Beint í efni</a>.</p>
-
-      <nav>
-        <ul>
-          <li class="current"><strong>Forsíða</strong></li>
-          <li><a href="sidur/um.html">Um</a></li>
-          <li><a href="sidur/ferdir.html">Ferðir</a></li>
-          <li><a href="sidur/skraning.html">Skráning</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav>
+      <ul>
+        <li class="current"><strong>Forsíða</strong></li>
+        <li><a href="sidur/um.html">Um</a></li>
+        <li><a href="sidur/ferdir.html">Ferðir</a></li>
+        <li><a href="sidur/skraning.html">Skráning</a></li>
+      </ul>
+    </nav>
+    <p class="sr-only"><a href="#efni">Beint í efni</a>.</p>
 
-    <main id="efni" class="fpage">
+    <div class="wrapper">
+      <main id="efni" class="fpage">
       <div class="cards">
         <section class="card">
       <h2>Ferðir eru okkar ær og kýr</h2>
@@ -67,24 +66,30 @@
       <p><button>Lestu söguna okkar</button></p>
       </section>
       </div>
-    </main>
-    <footer>
-      <h2>Opnunartímar</h2>
-      <h3>Skrifstofur</h3>
-      <dl>
+
+      </main>
+      <footer>
+        <div>
+          <h2>Opnunartímar</h2>
+          <h3>Skrifstofur</h3>
+          <dl>
         <dt>Mánudaga til föstudaga:</dt>
         <dd>12:00-18:00</dd>
         <dt>Laugardagar:</dt>
         <dd>14:00-16:00</dd>
         <dt>Sunnudagar:</dt>
         <dd>Lokað</dd>
-      </dl>
-      <h3>Samfélagsmiðlar</h3>
-      <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
-      <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
-      <a href="https://www.youtube.com/user/HIvarp">YouTube</a>
-      <h2>Hafðu samband</h2>
-      <address>
+          </dl>
+      </div>
+      <div>
+        <h3>Samfélagsmiðlar</h3>
+        <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
+        <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
+        <a href="https://www.youtube.com/user/HIvarp">YouTube</a>
+      </div>
+      <div>
+        <h2>Hafðu samband</h2>
+        <address>
         Ferðaþjónustufyrirtækið<br />
         Ferðagata 1<br />
         101 Reykjavík<br />
@@ -93,6 +98,8 @@
           >ferdathjonustufyrirtaeki@example.org</a
         ><br />
       </address>
-    </footer>
+      </div>
+      </footer>
+    </div>
   </body>
 </html>

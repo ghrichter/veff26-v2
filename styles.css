@@ -19,7 +19,6 @@
  */
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 *,
@@ -54,8 +53,8 @@ html {
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
-  src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+  font-weight: 100 900;
+  src: url(./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('woff2');
 }
 @font-face {
   font-family: 'Gelasio';
@@ -90,7 +89,15 @@ select {
 body {
   /* TODO skilgreiningar á letri, grunnstærð, bakgrunn og lit */
   background: #ffeedd;
-  font-family: 'Inter';
+  font-family: Inter;
+  color: #000000;
+  font-size: 16px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 button {
   background: #996644;
@@ -99,29 +106,52 @@ button {
 
 /** Haus **/
 header {
-/* TODO skilgreiningar fyrir haus/header */
-
+  width: 100%;
+  background: green;
 }
 header h1 {
   font-size: 3.25rem;
   text-align: center;
+  font-weight: 700;
 }
 /** Valmynd **/
 nav{
-/* TODO skilgreining fyrir nav  */
-  position: fixed;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: yellow;
+  border-bottom: 2px solid #000000;
+}
+nav ul{
   display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
 }
 /** Meginmál **/
 
-/* TODO almennar skilgreiningar fyrir meginmál */
+main {
+  max-width: 1100px;
+
+}
 
 /** Fótur **/
 footer{
-/* TODO skilgreiningar fyrir footer */
+  display: flex;
+  justify-content: center;
+  width: 100%;
   accent-color: #996644;
+  background: cyan;
+  border-top: 2px solid #000000;
 }
 /** Flekar / cards á forsíðu **/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .cards h2 {
   font-size: 2rem;
   font-weight: 700;
