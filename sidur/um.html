@@ -20,19 +20,19 @@
   <body>
     <header>
       <h1>Um Ferðaþjónustufyrirtækið</h1>
-
-      <p class="sr-only"><a href="#efni">Beint í efni</a>.</p>
-
-      <nav>
+    </header>
+          <nav>
         <ul>
           <li><a href="../index.html">Forsíða</a></li>
-          <li><a href="um.html">Um</a></li>
+          <li class="current"><strong>Um</strong></li>
           <li><a href="ferdir.html">Ferðir</a></li>
           <li><a href="skraning.html">Skráning</a></li>
         </ul>
       </nav>
-    </header>
+            <p class="sr-only"><a href="#efni">Beint í efni</a>.</p>
+    <div class="wrapper">
     <main id="efni">
+      <div class="aboutpage">
       <h1>Saga ferðaþjónustufyrirtækisins</h1>
       <h2>Fjölskyldufyrirtæki með rætur í ferðaþjónustu á Íslandi</h2>
       <p>
@@ -104,24 +104,24 @@
         sit amet.
       </p>
       <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+      </div>
     </main>
-    <footer>
-      <h2>Opnunartímar</h2>
-      <h3>Skrifstofur</h3>
-      <dl>
+      <footer>
+        <div>
+          <h2>Opnunartímar</h2>
+          <h3>Skrifstofur</h3>
+          <dl>
         <dt>Mánudaga til föstudaga:</dt>
         <dd>12:00-18:00</dd>
         <dt>Laugardagar:</dt>
         <dd>14:00-16:00</dd>
         <dt>Sunnudagar:</dt>
         <dd>Lokað</dd>
-      </dl>
-      <h3>Samfélagsmiðlar</h3>
-      <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
-      <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
-      <a href="https://www.youtube.com/user/HIvarp">YouTube</a>
-      <h2>Hafðu samband</h2>
-      <address>
+          </dl>
+      </div>
+      <div>
+        <h2>Hafðu samband</h2>
+        <address>
         Ferðaþjónustufyrirtækið<br />
         Ferðagata 1<br />
         101 Reykjavík<br />
@@ -130,6 +130,14 @@
           >ferdathjonustufyrirtaeki@example.org</a
         ><br />
       </address>
-    </footer>
+      </div>
+      <div>
+        <h3>Samfélagsmiðlar</h3>
+        <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
+        <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
+        <a href="https://www.youtube.com/user/HIvarp">YouTube</a>
+      </div>
+      </footer>
+    </div>
   </body>
 </html>
