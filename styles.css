@@ -217,9 +217,26 @@ tr:nth-child(2n) {
   background-color: #eebb99;
 }
 table td {
+  /*ég ruglaðist á skráningarsíðu leiðbeiningum og ferðasíðu,
+  en finnst þetta fínt hvorteðer */
   padding: 15px 10px; 
 }
 
 /** Form **/
-
+fieldset legend {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+fieldset {
+  width: 50%;
+  border: 0;
+  margin-bottom:  30px;
+}
+fieldset input, select {
+  width: 100%;
+}
+fieldset div {
+  /* þetta absolutely rústar checkboxinu en það er scuffed AF anyway */
+  margin-bottom: 20px;
+}
 /* TODO */
