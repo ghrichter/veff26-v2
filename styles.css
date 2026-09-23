@@ -153,6 +153,9 @@ main {
   max-width: 1100px;
 
 }
+.aboutpage {
+  margin: 0 10px;
+}
 .aboutpage h1 {
   margin-bottom: 20px;
 }
@@ -231,6 +234,10 @@ fieldset {
   width: 50%;
   border: 0;
   margin-bottom:  30px;
+  margin-left: 10px;
+}
+fieldset th {
+  
 }
 fieldset input, select {
   width: 100%;
@@ -240,3 +247,6 @@ fieldset div {
   margin-bottom: 20px;
 }
 /* TODO */
+.takemehome a {
+  margin: 10px 10px;
+}
